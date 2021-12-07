@@ -1,0 +1,367 @@
+body{
+	width: 75%;
+	height: 100%;
+	margin: auto;
+
+}
+.header-links__top{
+	display: flex;
+	position: relative;
+	top: -24px;
+	left: 890px;
+	margin: -24px 20p;
+}
+.top-links__text{
+	margin: 0 20px;
+}
+.header-links__items{
+	width: 100%;
+	height: 50px;
+	display: grid;
+}
+.header-links__logos{
+	
+}
+.header-logo{
+	width: 200px;
+	height: 50px;
+}
+.links-header{
+	display: flex;
+}
+.header-pages__links{
+	position: relative;
+	top: 20px;
+	left: 30px;
+}
+.header-pages__other{
+	position: relative;
+	top: 10px;
+	left: 165px;
+	float: right;
+}
+.other-page__1{
+	border: 1px solid #dcdbdb;
+	width: 180px;
+	height: 30px;
+}
+.other-page__2{
+	position: relative;
+	top: 5px;
+	left: 42px;
+	text-decoration: none;
+}
+.other-page__3{
+	color: #b1aeae;
+	position: relative;
+	top: -12px;
+	left: 32px;
+}
+.header-pages__links-1{
+	padding: 0 5px;
+}
+.category-pages{
+	background-color: #fae8bb;
+	height: 60px;
+	margin: 20px 0;
+	border-radius: 5px;
+}
+.header-pages__links-2{
+	padding: 15px;
+}
+.category-pages__links{
+	position: relative;
+	top: 20px;
+	left: 15px;
+}
+.main-points__cars-1,
+.main-points__cars-2,
+.main-points__cars-3,
+.main-points__cars-4,
+.main-points__cars-5,
+.main-points__cars-6,
+.main-points__cars-7,
+.main-points__cars-8,
+.main-points__cars-9,
+.main-points__cars-10,
+.main-points__cars-11,
+.main-points__cars-12,
+.main-points__cars-13,
+.main-points__cars-14,
+.main-points__cars-15,
+.main-points__cars-16,
+.main-points__cars-17,
+.main-points__cars-18,
+.main-points__cars-19,
+.main-points__cars-20,
+.main-points__cars-21,
+.main-points__cars-22,
+.main-points__cars-23,
+.main-points__cars-24,
+.main-points__cars-25,
+.main-points__cars-26,
+.main-points__cars-27
+{ 
+	width: 114px;
+	height: 80px;
+	display: inline-block;
+	padding: 1px 1px 5px 1px;
+}
+.main-points__cars: hover{
+	margin: 0px;
+}
+.main-points__cars{
+	margin: 0px 0px;
+	padding: 20px 20px 20px 20px;
+}
+.main-points__links{
+	margin: 0px 430px;
+	font-size: 22px;
+}
+.main-points__text{
+	
+	color: #707070;
+	margin: 10px 325px;
+}
+.main-points__img-1,
+.main-points__img-2,
+.main-points__img-3,
+.main-points__img-4,
+.main-points__img-5,
+.main-points__img-6,
+.main-points__img-7,
+.main-points__img-8,
+.main-points__img-9,
+.main-points__img-10,
+.main-points__img-11,
+.main-points__img-12,
+.main-points__img-13,
+.main-points__img-14,
+.main-points__img-15,
+.main-points__img-16,
+.main-points__img-17,
+.main-points__img-18,
+.main-points__img-19,
+.main-points__img-20,
+.main-points__img-21,
+.main-points__img-22,
+.main-points__img-23,
+.main-points__img-24,
+.main-points__img-25,
+.main-points__img-26,
+.main-points__img-27
+{
+	margin: 0px -15px;
+	width: 114px;
+	height: 80px;
+	z-index: 1;
+}
+
+.main-points__img-10:hover,
+.main-points__img-11:hover,
+.main-points__img-12:hover,
+.main-points__img-13:hover,
+.main-points__img-14:hover,
+.main-points__img-15:hover,
+.main-points__img-16:hover,
+.main-points__img-17:hover,
+.main-points__img-18:hover,
+.main-points__img-19:hover,
+.main-points__img-20:hover,
+.main-points__img-21:hover,
+.main-points__img-22:hover,
+.main-points__img-23:hover,
+.main-points__img-24:hover,
+.main-points__img-25:hover,
+.main-points__img-26:hover,
+.main-points__img-27:hover{
+	position: relative;
+	top: -200px;
+
+}
+
+
+.main-points__img-1:hover,
+.main-points__img-2:hover,
+.main-points__img-3:hover,
+.main-points__img-4:hover,
+.main-points__img-5:hover,
+.main-points__img-6:hover,
+.main-points__img-7:hover,
+.main-points__img-8:hover,
+.main-points__img-9:hover,
+.main-points__img-10:hover,
+.main-points__img-11:hover,
+.main-points__img-12:hover,
+.main-points__img-13:hover,
+.main-points__img-14:hover,
+.main-points__img-15:hover,
+.main-points__img-16:hover,
+.main-points__img-17:hover,
+.main-points__img-18:hover,
+.main-points__img-19:hover,
+.main-points__img-20:hover,
+.main-points__img-21:hover,
+.main-points__img-22:hover,
+.main-points__img-23:hover,
+.main-points__img-24:hover,
+.main-points__img-25:hover,
+.main-points__img-26:hover,
+.main-points__img-27:hover
+{
+	margin: 0px;
+	width: 150px;
+	height: 120px;
+	z-index: 2;
+	position: relative;
+	top: 25px;
+	left: -30px;
+}
+
+.main-points__cars2{
+	margin: 20px 30px;
+}
+
+.main-points__marks-1{
+	display: inline-grid;
+}
+.main-points__marks-2,
+.main-points__marks-3,
+.main-points__marks-4,
+.main-points__marks-5,
+.main-points__marks-6{
+	display: inline-grid;
+	margin: 0 50px;
+}
+.main-points__marks-2{
+	margin: 0 100px;
+}
+.main-points__choose{
+	width: 100%;
+
+}
+.main-points__marks-11{
+	display: inline-grid;
+}
+.main-points__marks-22,
+.main-points__marks-33,
+.main-points__marks-44,
+.main-points__marks-55,
+.main-points__marks-66{
+	display: inline-grid;
+	margin: 0 30px;
+
+}
+.main-points__marks-22{
+	margin: 0 30px;
+}
+.main-spares__img-1{
+	width: 150px;
+	height: 100px;
+	padding:0px 10px;
+}
+.main-spares__images{
+	margin: -10px -10px;
+}
+.main-spares__text{
+	font-size: 25px;
+}
+.main-spares__links1,
+.article-credits__links-1
+{
+	display: inline-grid;
+	margin: 0 50px 0 0;
+}
+.main-spares__links2,
+.main-spares__links3
+{
+	display: inline-grid;
+	margin: 30px 100px;
+}
+.main-spares__links33{
+	color: darkgreen;
+}
+.article-credits__links-2,
+.article-credits__links-3,
+.article-credits__links-4
+{
+	display: inline-grid;
+	margin: 0px 80px;
+}
+.main-text__service{
+	font-size: 50px;
+}
+.service__links{
+	margin: 20px 50px 0px 0px;
+	display: inline-grid;
+}
+.service__links2{
+	display: inline-grid;
+	margin: 20px 300px;
+}
+.a{
+	color: darkgreen;
+}
+.service__links22{
+	display: inline-grid;
+	margin: 20px 70px;
+}
+.last-links{
+	display: inline-grid;
+	margin: 0 50px 0 0;
+}
+.last-links2{
+	display: inline-grid;
+	margin: 0 100px;
+	width: 100px;
+}
+.footer-text2{
+	display: inline-grid;
+	margin: 0 30px;
+}
+.footer-text{
+	display: inline-grid;
+}
+
+.buttons-img{
+	width: 30px;
+	height: 30px;
+	padding: 0;
+}
+.buttons-img4{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 7px;
+}
+.buttons-img2{
+	width: 80px;
+	height: 30px;
+	padding: 0;
+}
+.buttons-img3{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	left: -30px;
+	top: -5px;
+
+}
+.header-pages__other-text{
+	position: relative;
+	left: 2px;
+	top: -52px;
+}
+.h5{
+	display: inline-flex;
+	width: 300px;
+	position: relative;
+	top: -60px;
+	left: 100px;
+}
+a{
+	color: #0065ce;
+}
+a:hover{
+	color: red;
+}

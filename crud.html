@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+
+
+  
+</head>
+
+<style>
+ 
+
+#img{
+    
+    
+    margin: 0px 50px;
+}
+.header-images{
+    margin: 20px 500px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: auto;  
+    text-align: center;
+}
+
+
+#tblList thead{
+    background: lightblue;
+    color: green;
+    width:100%;
+}
+
+.form-group{
+
+    top: 50px;
+}
+
+
+label{
+    background-color: lightblue;
+    color: purple;
+}
+</style>
+
+<body>
+
+  
+    </head>
+    <body>
+        <div class="header-images">
+            <img id="img" src="https://kolesa.kz/static/frontend/images/kolesa-logo.svg">
+            <img id="img" src="https://kolesa.kz/static/frontend/images/krisha-logo.svg">
+            <img id="img" src="https://kolesa.kz/static/frontend/images/market-logo.svg"> 
+        </div>
+      
+        <div class="page-header">
+            
+        </div>
+        
+        <div class="container">
+            <form id="frmPerson" class="form-horizontal">
+                <div class="form-group">
+                    <label for="txtID" class="col-sm-2 control-label">Type of car</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="Nome" class="form-control" >
+                    </div>
+                </div>                    
+                <div class="form-group">
+                    <label for="txtName" class="col-lg-2 control-label">Date</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="CPF" class="form-control" >
+                    </div>
+                </div>
+              <div class="form-group">
+                    <label for="txtName" class="col-lg-2 control-label">Price</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="Telefone" class="form-control" >
+                    </div>
+                </div>
+              <div class="form-group">
+                    <label for="txtName" class="col-lg-2 control-label">Email</label>
+                    <div class="col-sm-4">
+                        <input type="email" id="Email" class="form-control" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtPhone" class="col-lg-2 control-label">Color</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="Lat" class="form-control" >
+                    </div>
+                </div>
+               
+                <div class="form-group">
+                    <div class="col-lg-offset-2 col-sm-4">
+                        <input type="submit" value="Submit" id="btnSave" class="btn btn-success"/>
+                    </div>
+                </div>
+            </form>
+        </div>      
+
+       
+        <div class="container">
+            <table id="tblList" class="table table-bordered"></table>
+        </div>
+
+        
+      
+     
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  
+
+  
+
+<script >
+    $(function () {
+  var operation = "C"; 
+  var selected_index = -1; 
+  var tblPersons = localStorage.getItem("tblPersons"); 
+  tblPersons = JSON.parse(tblPersons); 
+  if (tblPersons === null) 
+      tblPersons = [];
+
+  function Create() {
+   
+    var person = JSON.stringify({
+       Nome: $("#Nome").val(),
+        CPF: $("#CPF").val(),
+        Telefone: $("#Telefone").val(),
+        Email: $("#Email").val(),
+       Latitude: $("#Lat").val()
+   
+    }); 
+  
+    tblPersons.push(person);
+  
+    localStorage.setItem("tblPersons", JSON.stringify(tblPersons));
+    
+    return true;
+  }
+
+  function Edit() {
+   
+    tblPersons[selected_index] = JSON.stringify({
+        Nome: $("#Nome").val(),
+        CPF: $("#CPF").val(),
+        Telefone: $("#Telefone").val(),
+        Email: $("#Email").val(),
+        Latitude: $("#Lat").val()
+       
+    });
+   
+    localStorage.setItem("tblPersons", JSON.stringify(tblPersons)); 
+   
+    return true;
+  }
+
+  function Delete() {
+   
+    tblPersons.splice(selected_index, 1); 
+    localStorage.setItem("tblPersons", JSON.stringify(tblPersons)); 
+    alert("Think again"); 
+  }
+
+  function List() {
+    $("#tblList").html("");
+    $("#tblList").html(
+            "<thead>" +
+            "<tr>" +                
+            "<th>Type of car</th>" +
+            "<th>Date</th>" +
+            "<th>Price</th>" +
+            "<th>Email</th>" +
+             "<th>Color</th>" +
+             
+            "<th>Edit</th>" +
+            "</tr>" +
+            "</thead>" +
+            "<tbody>" +
+            "</tbody>"
+            ); 
+    for (var i in tblPersons) {
+        var per = JSON.parse(tblPersons[i]);
+        $("#tblList tbody").append("<tr>" +                    
+                "<td>" + per.Nome + "</td>" +
+                "<td>" + per.CPF + "</td>" +
+                "<td>" + per.Telefone + "</td>" +
+                "<td>" + per.Email + "</td>" +
+                 "<td>" + per.Lat + "</td>" + 
+                                   
+                                   
+                 "<td><img src='http://res.cloudinary.com/demeloweb/image/upload/v1497537879/edit_n51oto.png' alt='Edit" + i + "' class='btnEdit'/>&nbsp &nbsp &nbsp &nbsp<img src='http://res.cloudinary.com/demeloweb/image/upload/v1497537882/delete_ntuxjl.png' alt='Delete" + i + "' class='btnDelete'/></td>" +                  
+                
+                "</tr>"
+                );
+    } 
+  }
+
+  $("#frmPerson").bind("submit", function () {
+    if (operation === "C")
+        return Create();
+    else
+        return Edit();
+  }); 
+  
+  List();
+
+  $(".btnEdit").bind("click", function () {
+    operation = "E"; 
+   
+    selected_index = parseInt($(this).attr("alt").replace("Edit", ""));
+   
+    var per = JSON.parse(tblPersons[selected_index]); 
+    $("#Nome").val(per.Nome);
+    $("#CPF").val(per.CPF);
+    $("#Telefone").val(per.Telefone);
+    $("#Email").val(per.Email);
+     $("#Lat").val(per.Lat);
+     
+  
+  });
+
+  $(".btnDelete").bind("click", function () {
+    
+    selected_index = parseInt($(this).attr("alt").replace("Delete", "")); 
+    Delete(); 
+    List(); 
+  });
+});
+</script>
+
+
+</body>
+
+</html>

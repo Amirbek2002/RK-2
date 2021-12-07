@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css">
+    <title>Responsive Video</title>
+    <style>
+        body {
+   font-smoothing: antialiased;
+    
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: .75em;
+    line-height: 1.4;
+    background: #fafafa;
+}
+
+
+@media (max-width: 1024px)
+.projects {
+    margin: 100px auto 30px;
+}
+
+.login-ways p, .signin {
+    text-align: center;
+}
+
+div {
+    display: block;
+}
+
+img{
+    position: absolute;
+    left: 600px;
+    bottom: 540px;
+    width: 350px;
+    height: 40px;
+}
+
+    </style>
+</head>
+
+<body>
+
+   <img src="kolesa.PNG">
+
+
+
+
+        <div class="form-container">
+            <form id="form" class="form">
+                
+               
+            
+                 <div class="formlabel">
+                    
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter your email adress" />
+                        <span>Error message</span><br>
+                    </div>
+
+                    <div class="formlabel">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter your User name" />
+                        <span>Error message</span><br>
+                    </div>
+                    <div class="formlabel">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" />
+                        <span>Error message</span><br>
+                    </div>
+                    <div class="formlabel">
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Confirm your password" />
+                        <span>Error message</span><br>
+                    </div> 
+                <br>
+          
+                <button type="submit">Продолжить</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/1.6.1/kute.min.js"></script>
+
+<div>
+      <div class="object first"><img id="firstimg" src="7cb324-11.jpg"></div>
+      <div class="object second"><img id="secondimg" src="Vencer-Sarthe-Sport-Car-2880x1920.jpg"></div>
+      <div class="object third"><img id="thirdimg" src="screen-3.jpg"></div>
+      <div class="object fourth"><img id="fourthimg" src="2009 Bugatti Veyron 16.4 Centenaire 128.jpg"></div>
+    </div>
+    <button class="start">Start Animation</button>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/1.6.1/kute.min.js"></script>
+  <script type="text/javascript">
+    var theObjects = document.querySelectorAll(".object");
+    var startButton = document.querySelector(".start");
+
+    var animateOpacity = KUTE.allFromTo(
+      theObjects,
+      {
+        opacity: 2,
+      },
+      {
+        opacity: 0.01,
+      },
+      {
+        offset: 1000,
+      }
+    );
+    startButton.addEventListener(
+      "click",
+      function () {
+        animateOpacity.start();
+      },
+      false
+    );
+  </script>
+
+
+</body>
+
+</html>
+
